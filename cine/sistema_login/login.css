@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   height: 100vh;
   background: linear-gradient(to right, #0f0f17, #1c1c2b);
@@ -39,7 +40,7 @@ form label {
   display: block;
   margin-bottom: 8px;
   font-size: 14px;
-  color: #bbbbbb;
+  color: #ffffff;
 }
 
 form input[type="email"],
