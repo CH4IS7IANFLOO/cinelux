@@ -54,7 +54,7 @@ try {
 <h1>📚 Estructura de la Base de Datos `<?= $dbname ?>`</h1>
 
 <?php foreach ($tablas as $tabla): ?>
-    <h3>📌 Tabla: <?= $tabla ?></h3>
+    <h3>📌 Tablas: <?= $tabla ?></h3>
     <table class="table table-bordered">
         <thead>
             <tr>

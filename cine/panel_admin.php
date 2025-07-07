@@ -82,7 +82,7 @@ $admin = $_SESSION['admin'];
 <body>
     <a href="estructura_bd.php" class="btn btn-outline-light mt-3">📊 Ver Estructura de la Base de Datos</a>
 <div class="panel">
-    <h1>Bienvenido, <?= htmlspecialchars($admin) ?> 👋</h1>
+    <h1>Bienvenidos, <?= htmlspecialchars($admin) ?> 👋</h1>
 
     <div class="seccion">
         <h4>Opciones de administración:</h4>

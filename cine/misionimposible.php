@@ -43,7 +43,7 @@ include 'header.php';
         />
         <div class="info-row">
           <h3>Título Original</h3>
-          <p>MISION IMPOSIBLE SENTENCIA FINAL</p>
+          <p>MISION IMPOSIBLE SENTENCIA FINAL </p>
         </div>
         <div class="info-row">
           <h3>Director</h3>

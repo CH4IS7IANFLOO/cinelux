@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     //usamos try para evitar errores
 
+    
     try {
         // Insertar en tabla reservas
         $stmtReserva = $pdo->prepare("INSERT INTO reservas (usuario_id, funcion_id, asientos, fecha) VALUES (?, ?, ?, ?)");

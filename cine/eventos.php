@@ -6,14 +6,13 @@
     <title>Eventos Especiales - CineLuxe</title>
     <link rel="stylesheet" href="styles.css" />
     
-    
-    
+
       <?php
 session_start();
 include 'header.php';
 ?>
     <style>
-        /* Estilos generales */
+       
         body, html {
             background-color: #121212;
             color: #eee;
