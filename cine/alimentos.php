@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Snacks | CineLuxe</title>
+  <title>Snacks | CineLuxe </title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>

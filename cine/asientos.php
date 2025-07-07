@@ -55,6 +55,7 @@ if (!isset($_SESSION['cliente_id'])) {
       margin: 8px 0;
       gap: 10px;
     }
+    
     .fila-label {
       width: 20px;
       font-weight: bold;

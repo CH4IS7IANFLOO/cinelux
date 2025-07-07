@@ -10,6 +10,7 @@
 <body>
   <div class="cine-detalle container">
 
+  
 <?php
 session_start();
 include 'header.php';
