@@ -1,0 +1,323 @@
+body, html {
+  background-color: #121212;
+  color: #eee;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.cine-detalle.container {
+  max-width: 1140px;
+  margin: 40px auto;
+  background: #1e1e3a;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #eee;
+}
+
+.cine-header {
+  position: relative;
+  height: 350px;
+  margin-bottom: 30px;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 177.77vh; /* 16:9 aspect ratio relative to viewport height */
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  filter: brightness(0.5);
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  pointer-events: none;
+}
+
+.cine-header .title {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  max-width: 70%;
+  z-index: 1;
+}
+
+.tags-header {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  display: flex;
+  gap: 8px;
+  z-index: 1;
+}
+
+.tag-m14, .tag-duration, .tag-action {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: default;
+  user-select: none;
+}
+
+.tag-m14 {
+  background: #b496ff;
+  color: #1e1e3a;
+}
+
+.tag-duration {
+  border: 1px solid #b496ff;
+  color: #b496ff;
+  background: transparent;
+}
+
+.tag-action {
+  background: #ff5e00;
+  color: #fff;
+}
+
+.cine-content {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.cine-info {
+  flex: 0 0 280px;
+  color: #ccc;
+  font-size: 14px;
+  border-right: 1px solid #3e2a9e;
+  padding-right: 20px;
+}
+
+.cine-info h3 {
+  color: #9146FF;
+  font-weight: 600;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #3e2a9e;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.cine-info p, .cine-info span {
+  line-height: 1.4;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.cine-info .info-row {
+  margin-bottom: 20px;
+}
+
+.cine-info img.poster {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 10px #9146ff88;
+}
+
+.cine-main {
+  flex: 1 1 auto;
+  min-width: 320px;
+}
+
+.fechas-carrusel {
+  display: flex;
+  overflow-x: auto;
+  gap: 25px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  user-select: none;
+}
+
+.fecha {
+  flex: 0 0 auto;
+  cursor: pointer;
+  color: #777;
+  padding-bottom: 5px;
+  transition: color 0.3s;
+  text-align: center;
+  min-width: 60px;
+}
+
+.fecha.active {
+  border-bottom: 3px solid #9146FF;
+  color: #9146FF;
+}
+
+.fecha:hover:not(.active) {
+  color: #b496ff;
+}
+
+.fecha div:first-child {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.fecha-text {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.funcion-info {
+  border: 1px solid #3e2a9e;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #383870;
+  margin-bottom: 20px;
+}
+
+.funcion-info small {
+  display: block;
+  margin-bottom: 10px;
+  color: #aaa;
+}
+
+.funcion-tipos {
+  margin-bottom: 8px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag-2d,
+.tag-doblada,
+.tag-subtitulada {
+  background: #3e2a9e;
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #bfbfff;
+  user-select: none;
+}
+
+.tag-doblada {
+  background: #6666cc;
+}
+
+.asiento {
+  font-weight: 600;
+  margin-left: 8px;
+  color: #ddd;
+}
+
+.btn-horario {
+  border: 1px solid #9146FF;
+  background: #2a2a5a;
+  color: #bfbfff;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-right: 12px;
+  margin-top: 8px;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.btn-horario:hover {
+  background: #9146FF;
+  color: #fff;
+}
+
+/* Scrollbar thin for fechas */
+.fechas-carrusel::-webkit-scrollbar {
+  height: 6px;
+}
+
+.fechas-carrusel::-webkit-scrollbar-track {
+  background: #1e1e3a;
+  border-radius: 3px;
+}
+
+.fechas-carrusel::-webkit-scrollbar-thumb {
+  background: #9146ff;
+  border-radius: 3px;
+}
+
+/* Estilos para el modal de confirmación */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+}
+
+button {
+  padding: 10px;
+  background: #9146FF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+}
+
+button:hover {
+  background: #7e32d9;
+}
+
+#btnCancelar {
+  background: #e74c3c;
+}
+
+@media (max-width: 720px) {
+  .cine-content {
+    flex-direction: column;
+  }
+
+  .cine-info {
+    flex: none;
+    width: 100%;
+    margin-bottom: 30px;
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .cine-header {
+    height: 220px;
+  }
+
+  .cine-header .title {
+    font-size: 18px;
+    max-width: 90%;
+  }
+}
+

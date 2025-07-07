@@ -1,0 +1,140 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #0f0f17, #1c1c2b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor principal */
+.login-container {
+  background-color: #14141f;
+  padding: 40px 35px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(145, 70, 255, 0.3);
+  max-width: 400px;
+  width: 100%;
+  color: #ffffff;
+  animation: slideUp 0.6s ease;
+}
+
+/* Título */
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #9146FF;
+}
+
+/* Campos del formulario */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #3d3d5c;
+  border-radius: 8px;
+  background-color: #1f1f2e;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 14px;
+  transition: border 0.3s;
+}
+
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+  border-color: #9146FF;
+  outline: none;
+}
+
+/* Botón de envío */
+form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #9146FF;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button[type="submit"]:hover {
+  background-color: #772ce8;
+}
+
+/* Link de registro */
+.register-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #9146FF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Ojito */
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  padding-right: 40px;
+}
+
+#togglePassword {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #aaa;
+  transition: color 0.3s;
+}
+
+#togglePassword:hover {
+  color: #fff;
+}
+
+/* Animación suave */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsivo */
+@media screen and (max-width: 480px) {
+  .login-container {
+    padding: 30px 20px;
+  }
+}
