@@ -50,8 +50,8 @@ body, html {
 }
 
 .cine-tabs li.active {
-  border-bottom: 3px solid #9146FF;
-  color: #9146FF;
+  border-bottom: 3px solid #9358ec;
+  color: #6915e7;
 }
 
 .cine-tabs li:hover:not(.active) {
@@ -67,7 +67,7 @@ body, html {
 /* Lado izquierdo info */
 .cine-info {
   flex: 0 0 280px;
-  color: #ccc;
+  color: #f1e0e0;
   font-size: 14px;
 }
 
@@ -91,7 +91,7 @@ body, html {
   margin-bottom: 8px;
   padding: 8px 10px;
   border: 1px solid #9146FF;
-  background: #2a2a5a;
+  background: #2f2f6b;
   color: #bfbfff;
   cursor: pointer;
   border-radius: 4px;
