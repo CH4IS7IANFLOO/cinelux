@@ -10,6 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $metodo = $_POST['metodo_pago'];
     $fecha = date('Y-m-d H:i:s');
 
+    //usamos try para evitar errores
+
     try {
         // Insertar en tabla reservas
         $stmtReserva = $pdo->prepare("INSERT INTO reservas (usuario_id, funcion_id, asientos, fecha) VALUES (?, ?, ?, ?)");
