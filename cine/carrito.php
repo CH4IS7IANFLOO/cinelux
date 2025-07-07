@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+
 $precios = [
   "Combo 1" => 18.00, "Combo 2" => 25.00, "Combo 3" => 30.00, "Combo 4" => 28.00,
   "Combo 5" => 29.00, "Combo 6" => 27.00, "Combo 7" => 30.00, "Combo 8" => 28.00,

@@ -19,7 +19,7 @@
     <!-- Lado izquierdo info -->
     <aside class="cine-info">
       <h3>DIRECCIÓN</h3>
-      <p>Calle Alfredo Mendiola 3698 Km 8.5 de la Av. Panamericana Norte Independencia</p>
+      <p>Calle Alfredo Mendiola 3698 Km  8.5 de la Av. Panamericana Norte Independencia</p>
       <button class="btn-location" onclick="window.open('https://www.google.com/maps?q=Mega+Plaza+Independencia', '_blank')">VER UBICACIÓN</button>
     </aside>
 

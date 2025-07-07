@@ -15,13 +15,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header("Location: register.php");
         exit;
     }
-
+    // Validar formato de correo electrónico
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $_SESSION['error'] = "Correo electrónico no válido.";
         header("Location: register.php");
         exit;
     }
-
+    // Validar longitud de la contraseña
     if (strlen($password) < 8) {
         $_SESSION['error'] = "La contraseña debe tener al menos 8 caracteres.";
         header("Location: register.php");

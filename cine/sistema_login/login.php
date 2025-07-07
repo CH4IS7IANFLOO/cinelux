@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="login-container">
-    <h2>Bienvenido a CineLuxe</h2>
+    <h2>Sean Bienvenidos a CineLuxe</h2>
     <form action="validar_login.php<?php echo isset($_GET['redirect']) ? '?redirect=' . urlencode($_GET['redirect']) : ''; ?>" method="POST">
       <label for="email">Correo electrónico:</label>
       <input type="email" name="email" required>
@@ -61,6 +61,7 @@
     </script>
     <?php unset($_SESSION['success']); ?>
   <?php endif; ?>
+
 
 </body>
 </html>

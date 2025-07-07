@@ -147,7 +147,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <div class="container">
     <header>
-        <h1>Formulario de Contacto</h1>
+        <h1>Formularios de los Contacto</h1>
     </header>
 
     <form action="contacto.php" method="POST" class="formulario">

@@ -1,3 +1,6 @@
+
+// File: cine/sistema_login/register.js
+
 const password = document.getElementById('password');
 const togglePassword = document.getElementById('togglePassword');
 const strengthBar = document.getElementById('strengthBar');

@@ -1,3 +1,4 @@
+
 <?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -46,6 +47,7 @@
       password.type = password.type === 'password' ? 'text' : 'password';
     };
   </script>
+  
 
   <?php if (isset($_SESSION['error'])): ?>
   <script>
