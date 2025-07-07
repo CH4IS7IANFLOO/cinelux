@@ -20,7 +20,7 @@ if (!isset($_SESSION['usuario_id'])) {
   <!-- Método de pago -->
   <label>Método de pago:</label>
   <select name="metodo_pago" required>
-    <option value="tarjeta">Tarjeta</option>
+    <option value="tarjeta">Tarjeta de credito</option>
     <option value="paypal">Paypal</option>
     <option value="efectivo">Efectivo</option>
   </select><br><br>
